@@ -1,7 +1,7 @@
-# Proyecto Helisa Salud
+# Proyecto Books
 
-Una entidad de salud desea tener un registro de cada uno de los actores que intervienen en el
-proceso de prestación de servicios
+El siguiente proyecto soportar las necesidades de una tienda de alquiler de
+libros.
 
 ---
 ## Requerimientos
