@@ -92,3 +92,9 @@ Crear el archivo .env y configurar las siguientes variables
 ## Edictor Codigo
 - ### Visual Studio Code
   [official visual Studio code website](https://code.visualstudio.com/)
+  
+  ---
+
+## Cliente HTTP
+- ### Postman
+  [official postman website](https://www.postman.com/)
