@@ -40,8 +40,8 @@ Si necesita actualizar `npm`, puede hacerlo usando.
 
 ## Instalacion
 
-    $ https://github.com/farango0728/salud-helisa.git
-    $ cd salud-helisa
+    $ https://github.com/farango0728/books.git
+    $ cd books
     $ npm install
 
 ## Configure app
@@ -64,7 +64,7 @@ Crear el archivo .env y configurar las siguientes variables
     $ npm run build
     
 ## Ejecutar en Test
-  Al Hacer las pruebas tener encuenta que la abse de datos se encuentra relacionado. cuidado con los insert en la base de datos
+  Al Hacer las pruebas tener encuenta que la base de datos se encuentra relacionado. cuidado con los insert en la base de datos
 
     $ npm run test
 
@@ -87,5 +87,8 @@ Crear el archivo .env y configurar las siguientes variables
 ## Documentacion Api
 - ### Insomnia Design
   [official Insomnia Design website](https://insomnia.rest/product/design)
+---
 
-
+## Edictor Codigo
+- ### Insomnia Design
+  [official visualstudio code website](https://code.visualstudio.com/)
