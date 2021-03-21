@@ -90,5 +90,5 @@ Crear el archivo .env y configurar las siguientes variables
 ---
 
 ## Edictor Codigo
-- ### Insomnia Design
-  [official visualstudio code website](https://code.visualstudio.com/)
+- ### Visual Studio Code
+  [official visual Studio code website](https://code.visualstudio.com/)
