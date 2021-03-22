@@ -1,14 +1,14 @@
 import {
-    Entity,
-    Column,
-    PrimaryGeneratedColumn,
-    OneToMany
-  } from 'typeorm';
-  import {SharedProp} from './sharedProp.helpers';
-  import Books from './books'
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  OneToMany
+} from 'typeorm';
+import {SharedProp} from './sharedProp.helpers';
+import Books from './books';
     
   @Entity()
-  export default class Bookings extends SharedProp{
+export default class Bookings extends SharedProp{
           
           @PrimaryGeneratedColumn()
           id: number;
@@ -41,4 +41,4 @@ import {
         @OneToMany(() => Books, books => books.id)
         Books: Books; 
     
-  }
+}

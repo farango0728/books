@@ -128,7 +128,7 @@ export const updateCustomer = async (req: Hapi.request) : Promise<Customers> => 
 
       await tManager.save(login);
 
-      return user
+      return user;
     });
     
   }catch (error) {

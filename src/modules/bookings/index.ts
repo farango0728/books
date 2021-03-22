@@ -20,9 +20,9 @@ export = {
         notes: 'Description service',
         tags: ['api'],
         auth: {
-            strategy: 'jwt',
-            scope: [Scopes.CUSTOMER, Scopes.ADMIN]
-          },
+          strategy: 'jwt',
+          scope: [Scopes.CUSTOMER, Scopes.ADMIN]
+        },
       },
       handler: createReservation,
     });
@@ -34,9 +34,9 @@ export = {
         notes: 'Description service',
         tags: ['api'],
         auth: {
-            strategy: 'jwt',
-            scope: [Scopes.CUSTOMER, Scopes.ADMIN]
-          },
+          strategy: 'jwt',
+          scope: [Scopes.CUSTOMER, Scopes.ADMIN]
+        },
       },
       handler: listReservation,
     });
@@ -53,9 +53,9 @@ export = {
           })
         },
         auth: {
-            strategy: 'jwt',
-            scope: [Scopes.CUSTOMER, Scopes.ADMIN]
-          },
+          strategy: 'jwt',
+          scope: [Scopes.CUSTOMER, Scopes.ADMIN]
+        },
       },
       handler: searchReservationBook,
     });
@@ -72,9 +72,9 @@ export = {
           })
         },
         auth: {
-            strategy: 'jwt',
-            scope: [Scopes.CUSTOMER, Scopes.ADMIN]
-          },
+          strategy: 'jwt',
+          scope: [Scopes.CUSTOMER, Scopes.ADMIN]
+        },
       },
       handler: searchReservationCustomer,
     });

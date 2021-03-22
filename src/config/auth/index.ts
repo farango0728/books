@@ -2,7 +2,7 @@
 import { Connection } from 'typeorm';
 import Hapi from '@hapi/hapi';
 import Customers  from '../../entities/customers';
-import Administrator from '../../entities/administrator'
+import Administrator from '../../entities/administrator';
 import Login from '../../entities/login';
 import bcrypt from 'bcrypt';
 import administrator from '../../modules/administrator';

@@ -1,15 +1,15 @@
 import { Boom } from '@hapi/boom';
 import {
-    Entity,
-    Column,
-    PrimaryGeneratedColumn,
-    ManyToOne
-  } from 'typeorm';
-  import {SharedProp} from './sharedProp.helpers';
-  import Bookings from './bookings'
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  ManyToOne
+} from 'typeorm';
+import {SharedProp} from './sharedProp.helpers';
+import Bookings from './bookings';
     
   @Entity()
-  export default class Books extends SharedProp{
+export default class Books extends SharedProp{
           
           @PrimaryGeneratedColumn()
           id: number;
@@ -42,4 +42,4 @@ import {
         @ManyToOne(() => Bookings, bookings => bookings.id)
         Bookings: Bookings[];
     
-  }
+}

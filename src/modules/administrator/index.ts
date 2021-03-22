@@ -29,9 +29,9 @@ export = {
           })
         },
         auth: {
-            strategy: 'jwt',
-            scope: [Scopes.ADMIN]
-          },
+          strategy: 'jwt',
+          scope: [Scopes.ADMIN]
+        },
       },
       handler: createAdministrator,
     });
