@@ -6,6 +6,7 @@ import {
 } from 'typeorm';
 import {SharedProp} from './sharedProp.helpers';
 import Customers from './customers';
+import Administrator from './administrator';
 import {Scopes} from '../modules/user/types';
   
 
@@ -30,5 +31,9 @@ export default class Login extends SharedProp{
         /** Relation to Customers */
         @OneToMany(() => Customers, customer => customer.id)
         Customer: Customers;
+
+        /** Relation to Administrator */
+        @OneToMany(() => Administrator, administrator => administrator.id)
+        Administrator: Administrator; 
         
 }

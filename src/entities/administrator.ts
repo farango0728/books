@@ -8,8 +8,9 @@ import {SharedProp} from './sharedProp.helpers';
 import { ColumnNumericTransformer } from '../utils/db';
 import Login from './login';
 import {DocumentType, Gender} from '../modules/user/types';
+  
 @Entity()
-export default class Customers extends SharedProp{
+export default class Administrator extends SharedProp{
         
         @PrimaryGeneratedColumn()
         id: number;
@@ -34,22 +35,6 @@ export default class Customers extends SharedProp{
         @Column({ type: 'enum', enum: Gender, default: Gender.OTHER })
         gender: Gender;
         
-        /** The customers department */
-        @Column()
-        department: string; 
-
-        /** The customers city */
-        @Column()
-        city: string; 
-
-        /** The customers neighborhood */
-        @Column()
-        neighborhood: string;
-
-        /** The customers address */
-        @Column()
-        address: string;
-
         /** The customers phone */
         @Column('bigint', { transformer: new ColumnNumericTransformer() })
         phone: string;
