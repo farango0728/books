@@ -54,6 +54,7 @@ Crear el archivo .env y configurar las siguientes variables
 - DBUser = 
 - DBName = 
 - DBPassword = 
+- TOKEN_SECRET = 
 
 ## Ejecutar en Desarrollo
 
