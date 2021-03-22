@@ -1,7 +1,7 @@
 {
-  "name": "salud-helisa",
+  "name": "media-books",
   "version": "1.0.0",
-  "description": "Proyecto entidad de Salud",
+  "description": "Proyecto Tita Media Books",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -41,6 +41,7 @@
     "hapi-auth-jwt2": "^10.2.0",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
+    "request": "^2.88.2",
     "typeorm": "^0.2.29"
   },
   "devDependencies": {
