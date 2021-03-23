@@ -99,3 +99,9 @@ Crear el archivo .env y configurar las siguientes variables
 ## Cliente HTTP
 - ### Postman
   [official postman website](https://www.postman.com/)
+  
+    ---
+
+## Data Fake
+- ### Fake
+  llamar al enpoint http://localhost:9000/api/fake/db
