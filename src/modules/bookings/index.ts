@@ -21,7 +21,7 @@ export = {
         tags: ['api'],
         auth: {
           strategy: 'jwt',
-          scope: [Scopes.CUSTOMER, Scopes.ADMIN]
+          scope: [Scopes.CUSTOMER]
         },
       },
       handler: createReservation,

@@ -9,7 +9,7 @@ import { Connection } from 'typeorm';
 import {DocumentType, Gender, Scopes} from '../../modules/user/types'
 
 
-export const fakeBooks = async (req: Hapi.request) :  Promise<{'message' : string}>  => {
+export const fakeBd = async (req: Hapi.request) :  Promise<{'message' : string}>  => {
     
   try{
     const connection: Connection = req.server.app.connection;

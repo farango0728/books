@@ -2,7 +2,7 @@ import {
   Entity,
   Column,
   PrimaryColumn,
-  OneToMany
+  ManyToOne
 } from 'typeorm';
 import {SharedProp} from './sharedProp.helpers';
 import Customers from './customers';
@@ -29,11 +29,11 @@ export default class Login extends SharedProp{
         scope: Scopes;
 
         /** Relation to Customers */
-        @OneToMany(() => Customers, customer => customer.id)
+        @ManyToOne(() => Customers, customer => customer.id)
         Customer: Customers;
 
         /** Relation to Administrator */
-        @OneToMany(() => Administrator, administrator => administrator.id)
+        @ManyToOne(() => Administrator, administrator => administrator.id)
         Administrator: Administrator; 
         
 }

@@ -1,7 +1,7 @@
 import Hapi from '@hapi/hapi';
 import Joi from '@hapi/joi';
 import { Options } from '../../config/types';
-import { getAllCustomers, createCustomer, updateCustomer } from './controller';
+import { getAllCustomers, createCustomer, updateCustomer, getCustomer } from './controller';
 import { DocumentType, Gender} from '../user/types';
 import {Scopes} from '../user/types';
 
@@ -18,7 +18,7 @@ export = {
         tags: ['api'],
         auth: {
           strategy: 'jwt',
-          scope: [Scopes.CUSTOMER, Scopes.ADMIN]
+          scope: [Scopes.ADMIN]
         },
       },
       handler: getAllCustomers
@@ -79,6 +79,21 @@ export = {
         },
       },
       handler: updateCustomer,
+    });
+
+    server.route({
+      method: 'GET',
+      path: `${options.routePrefix}/customers/customerUser`,
+      options: {
+        description: 'Get all active customer',
+        notes: 'Description service',
+        tags: ['api'],
+        auth: {
+          strategy: 'jwt',
+          scope: [Scopes.CUSTOMER]
+        },
+      },
+      handler: getCustomer
     });
   },
 };

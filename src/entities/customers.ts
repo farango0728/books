@@ -2,7 +2,7 @@ import {
   Entity,
   Column,
   PrimaryGeneratedColumn,
-  ManyToOne
+  OneToMany
 } from 'typeorm';
 import {SharedProp} from './sharedProp.helpers';
 import { ColumnNumericTransformer } from '../utils/db';
@@ -64,11 +64,11 @@ export default class Customers extends SharedProp{
         active: boolean 
 
          /** Relation to Bookings */ 
-         @ManyToOne(() => Bookings, bookings => bookings.idCustomer)
+         @OneToMany(() => Bookings, bookings => bookings.idCustomer)
          Bookings: Bookings[];
 
         /** Relation to Login */ 
-        @ManyToOne(() => Login, login => login.idUser)
+        @OneToMany(() => Login, login => login.idUser)
         login: Login[];
   
 }

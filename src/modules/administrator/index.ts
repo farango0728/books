@@ -1,7 +1,7 @@
 import Hapi from '@hapi/hapi';
 import Joi from '@hapi/joi';
 import { Options } from '../../config/types';
-import {createAdministrator } from './controler';
+import {createAdministrator, listAdministrator } from './controler';
 import { DocumentType, Gender} from '../user/types';
 import {Scopes} from '../user/types';
 
@@ -34,6 +34,20 @@ export = {
         },
       },
       handler: createAdministrator,
+    });
+    server.route({
+      method: 'GET',
+      path: `${options.routePrefix}/adminstrator/adminstrators`,
+      options: {
+        description: 'Create adminstrators',
+        notes: 'Description adminstrators',
+        tags: ['api'],
+        auth: {
+          strategy: 'jwt',
+          scope: [Scopes.ADMIN]
+        },
+      },
+      handler: listAdministrator,
     });
   },
 };
