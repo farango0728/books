@@ -106,4 +106,4 @@ Crear el archivo .env y configurar las siguientes variables
 - ### Fake
   llamar al enpoint http://localhost:9000/api/fake/db
   
-  $ La data inicial se carga a la base de datos el usario admin = pruebaAdmin@gmail.com y password = 987654321 --- usuario cliente = prueba@gmail.com y password =    123456789
+  #### La data inicial se carga a la base de datos el usario admin = pruebaAdmin@gmail.com y password = 987654321 --- usuario cliente = prueba@gmail.com y password =    123456789
