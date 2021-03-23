@@ -108,3 +108,13 @@ Crear el archivo .env y configurar las siguientes variables
   
 - #### usario admin = pruebaAdmin@gmail.com y password = 987654321
 - #### usuario cliente = prueba@gmail.com y password =    123456789
+
+
+## Autenticacion y Autorizacion
+- ### Autenticacion
+![image](https://user-images.githubusercontent.com/20598508/112151514-4d754200-8baf-11eb-9401-8118e404abe2.png)
+  
+  se efectua en login, el siatema genera el token, se debe colocar an la
+  
+- #### usario admin = pruebaAdmin@gmail.com y password = 987654321
+- #### usuario cliente = prueba@gmail.com y password =    123456789
