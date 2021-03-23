@@ -114,7 +114,7 @@ Crear el archivo .env y configurar las siguientes variables
 - ### Autenticacion
 ![image](https://user-images.githubusercontent.com/20598508/112151514-4d754200-8baf-11eb-9401-8118e404abe2.png)
   
-  se efectua en login, el siatema genera el token, se debe colocar an la
-  
-- #### usario admin = pruebaAdmin@gmail.com y password = 987654321
-- #### usuario cliente = prueba@gmail.com y password =    123456789
+- se efectua en login, el sistema genera el token, ese token se debe de colocar en cada llamado de los enpoint
+-![image](https://user-images.githubusercontent.com/20598508/112151857-ae9d1580-8baf-11eb-81e3-913b8f22cd6e.png)
+
+- ### sed validad el scope del usuario para los ingresos a los enpoint
