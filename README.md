@@ -110,10 +110,13 @@ Crear el archivo .env y configurar las siguientes variables
 - #### usuario cliente = prueba@gmail.com y password =    123456789
 
 
-## Autenticacion y Autorizacion
+## Autenticación y Autorización
 - ### Autenticacion
+-
 ![image](https://user-images.githubusercontent.com/20598508/112151514-4d754200-8baf-11eb-9401-8118e404abe2.png)
   
+- ### Autorización
+
 - se efectua en login, el sistema genera el token, ese token se debe de colocar en cada llamado de los enpoint
 -![image](https://user-images.githubusercontent.com/20598508/112151857-ae9d1580-8baf-11eb-81e3-913b8f22cd6e.png)
 
