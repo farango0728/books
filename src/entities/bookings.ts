@@ -6,6 +6,7 @@ import {
 } from 'typeorm';
 import {SharedProp} from './sharedProp.helpers';
 import Books from './books';
+import Customers from './customers';
     
   @Entity()
 export default class Bookings extends SharedProp{
@@ -36,6 +37,10 @@ export default class Bookings extends SharedProp{
           /** The customers active */
           @Column({ default: true })
           active: boolean 
+
+          /** Relation to Customers */
+        @OneToMany(() => Customers, customer => customer.id)
+        Customers: Customers;
 
           /** Relation to Books */
         @OneToMany(() => Books, books => books.id)

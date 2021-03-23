@@ -38,6 +38,7 @@ export const createAdministrator = async (req: Hapi.request)  => {
   
     const newCustomer = new Administrator();
   
+    newCustomer.id = documentNumber;
     newCustomer.documentType = documentType; 
     newCustomer.documentNumber = documentNumber; 
     newCustomer.name = name; 
