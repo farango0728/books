@@ -8,6 +8,7 @@ import {SharedProp} from './sharedProp.helpers';
 import { ColumnNumericTransformer } from '../utils/db';
 import Login from './login';
 import {DocumentType, Gender} from '../modules/user/types';
+import Bookings from './bookings'
 @Entity()
 export default class Customers extends SharedProp{
         
@@ -61,6 +62,10 @@ export default class Customers extends SharedProp{
         /** The customers active */
         @Column({ default: true })
         active: boolean 
+
+         /** Relation to Bookings */ 
+         @ManyToOne(() => Bookings, bookings => bookings.idCustomer)
+         Bookings: Bookings[];
 
         /** Relation to Login */ 
         @ManyToOne(() => Login, login => login.idUser)

@@ -1,7 +1,7 @@
 import {
   Entity,
   Column,
-  PrimaryGeneratedColumn,
+  PrimaryColumn,
   ManyToOne
 } from 'typeorm';
 import {SharedProp} from './sharedProp.helpers';
@@ -12,7 +12,7 @@ import {DocumentType, Gender} from '../modules/user/types';
 @Entity()
 export default class Administrator extends SharedProp{
         
-        @PrimaryGeneratedColumn()
+        @PrimaryColumn()
         id: number;
 
         /** The customers document type */
