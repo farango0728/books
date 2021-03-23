@@ -71,3 +71,14 @@ export const createAdministrator = async (req: Hapi.request)  => {
     return error;
   }
 };
+
+export const listAdministrator = async (req: Hapi.request)  => {
+    
+  try{
+    const connection: Connection = req.server.app.connection;
+    return connection.manager.find(Administrator);
+  }catch (error) {
+    console.log('createAdministrator Error:', error);
+    return error;
+  }
+};

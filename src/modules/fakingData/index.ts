@@ -1,5 +1,5 @@
 import Hapi from '@hapi/hapi';
-import { fakeBooks } from './controller';
+import { fakeBd } from './controller';
 import { Options } from '../../config/types';
 
 export = {
@@ -13,7 +13,7 @@ export = {
         notes: 'Service to obtain the health of the project',
         tags: ['api']
       },
-      handler: fakeBooks,
+      handler: fakeBd,
     });
   },
 };

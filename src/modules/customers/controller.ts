@@ -136,3 +136,14 @@ export const updateCustomer = async (req: Hapi.request) : Promise<Customers> => 
     return error;
   }
 };
+
+export const getCustomer = async (req: Hapi.request) => {
+  try{
+    const uid = req.auth.credentials.id;
+    const connection: Connection = req.server.app.connection;
+    return connection.manager.find(Customers, { where: { id: uid }});
+  }catch (error) {
+    console.log('getCustomer Error:', error);
+    return error;
+  }
+};
